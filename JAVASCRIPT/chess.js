@@ -89,10 +89,10 @@ function initialPositions() {
 		let rank2 = document.getElementById(boardStructure[i + 48])
 		let rank1 = document.getElementById(boardStructure[i + 56])
 
-		rank7.innerHTML = "<img src='../PROJECTS/Images/DarkPawn.png' class='piece black pawn'>";
-		rank2.innerHTML = "<img src='../PROJECTS/Images/LightPawn.png' class='piece white pawn'>";
-		rank1.innerHTML = `<img src='../PROJECTS/Images/${imageReference[i][1]}' class='piece white ${pieceName[i]}'>`;
-		rank8.innerHTML = `<img src='../PROJECTS/Images/${imageReference[i][0]}' class='piece black ${pieceName[i]}'>`;
+		rank7.innerHTML = "<img src='../Images/DarkPawn.png' class='piece black pawn'>";
+		rank2.innerHTML = "<img src='../Images/LightPawn.png' class='piece white pawn'>";
+		rank1.innerHTML = `<img src='../Images/${imageReference[i][1]}' class='piece white ${pieceName[i]}'>`;
+		rank8.innerHTML = `<img src='../Images/${imageReference[i][0]}' class='piece black ${pieceName[i]}'>`;
 	}
 }
 initialPositions();
