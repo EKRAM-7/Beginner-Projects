@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@700&display=swap" rel="stylesheet">
+        <title>Timer</title>
+        <style type="text/css" media="all">
+            body{
+                background-color: lime;
+            }
+           .container{
+               display: flex;
+               border: 2px solid black;
+               height: 150px;
+               align-items: center;
+               background-color: cyan;
+               justify-content: space-evenly;
+               margin-bottom: 20px;
+               font-family: 'Bungee Spice', cursive;
+           }
+           #minutes{
+               display: flex;
+               height: 100px;
+               width: 100px;
+               border: 2px solid black;
+               font-size: 80px;
+               justify-content: center;
+               align-items: center;
+           }
+           #seconds{
+               display: flex;
+               height: 100px;
+               width: 100px;
+               border: 2px solid black;
+               font-size: 80px;
+               justify-content: center;
+               align-items: center;
+           }
+           input{
+               width: 30px;
+           }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div id="minutes"></div>
+        <div id="seconds"></div>
+    </div>
+    <div style="display:flex; justify-content:space-evenly;">
+    <input type="number" id="set-time"/><button id="minute-button">Add minutes</button>
+    <button id="seconds-button">Add seconds</button>
+    </div>
+    <button id="start" style="margin:50px;">START</button><button id="reset">Reset</button>
+    <div id="message" style="font-family: 'Reem Kufi Fun', sans-serif; font-size:80px;">
+        
+    </div>
+    <audio id="anya" controls style="display:none">
+   <source src= "waku2.mp3" type="audio/mpeg"> 
+  </audio>
+</body>
+<script src="timer.js" type="text/javascript" charset="utf-8"></script>
+</html>
