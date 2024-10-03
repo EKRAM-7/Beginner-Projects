@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+        <title>STOPWATCH BY IKRAM</title>
+        <style type="text/css" media="all">
+            *{
+                font-family: 'Baloo Bhai 2', cursive;
+            }
+            .box{
+                height: 100px;
+                width: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 80px;
+            }
+            
+        </style>
+    </head>
+<body>
+    <h1 style="text-align:center;">Stopwatch</h1>
+    <div style="display:flex; justify-content:space-evenly; margin:10px 10px 30px;">
+        <div class="box" id="minutes" style="border:2px solid black;">00</div>
+        <div class="box" id="seconds" style="border:2px solid black;">00</div>
+        <div class="box" id="mili-sec" style="border:2px solid black;">00</div>
+    </div>
+    <button id="stop">STOP</button>
+    <button id="start">START</button>
+    <button id="reset">RESET</button>
+</body>
+<script src="JAVASCRIPT/stopwatch.js" type="text/javascript" charset="utf-8"></script>
+</html>
