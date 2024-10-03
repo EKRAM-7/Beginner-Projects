@@ -1,0 +1,65 @@
+*{
+    font-family: 'Peralta', cursive;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10vh 10vw 20px;
+    height: 50vh;
+    width: 80vw;
+}
+
+.btn{
+    font-size: 4vh;
+    color: black;
+    background-color: #80f460;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset{
+    height: 5vh;
+    width: 23vw;
+    font-size: 3vh;
+    background-color: red;
+    color: white;
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+}
+
+#reset:hover{
+    background-color: aqua;
+    color: red;
+}
+
+#turns{
+    text-align: center;
+    font-size: 5vh;
+    margin: 3vh;
+}
+
+h1{
+    font-size: 5vh;
+    text-align: center;
+}
+
+#winner{
+    font-size: 5vh;
+    text-align: center;
+    margin: 3vh;
+}
+
+#animation img{
+    width: 15vw;
+    height: 15vh;
+}
+
+#animation{
+    display: flex;
+    justify-content: center;
+}
