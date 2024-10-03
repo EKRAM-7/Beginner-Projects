@@ -1,4 +1,5 @@
 # Beginner-Projects
-In this repository, I have put those of my projects that I built when i was learning to code 
+This repository contains a collection of my early coding projects that I created while learning how to code. These projects helped me build a foundation in programming and understand key concepts.
 <br>
+Through these projects, I developed foundational knowledge in HTML, CSS, JavaScript, and problem-solving.
 AUTHOR - EKRAM KHAN
