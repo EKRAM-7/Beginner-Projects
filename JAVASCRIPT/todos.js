@@ -17,7 +17,7 @@ addTaskBtn.onclick = function() {
 	<input type="text" class="task ${TaskNumber}" value="${text}" disabled/>
 	<button class="${TaskNumber}" onclick=editTask(${TaskNumber})>Edit</button>
 	<button onclick= moveCompletedTasks(${TaskNumber}) class="${TaskNumber}">Completed</button>
-	<button class="${TaskNumber}" onclick=deleteField(${TaskNumber})>Delete</button>
+	<button class="${TaskNumber}" onclick=deleteField(${TaskNumber})>Delete</button><br>
 	`;
 	// increment the TaskNumber so that the next time it gives a new class.
 	TaskNumber++;
@@ -53,7 +53,7 @@ function moveCompletedTasks(inputsClass) {
 	completedTasksDiv.innerHTML += `
 	<input type="text" disabled class="${inputsClass}" value="${inputField[0].value}"/>
 	<button class="${inputsClass}" onclick=deleteFieldFromCompleted(${inputsClass})>Delete</button>
-	<button class="${inputsClass}" onclick=moveToPending(${inputsClass})>Move to Pending</button>
+	<button class="${inputsClass}" onclick=moveToPending(${inputsClass})>Move to Pending</button><br>
 	`;
 	// when the task is moved to the completed part it must be removed from the Pending tasks .
 	for (let i = 0; i < 4; i++) {
@@ -82,6 +82,6 @@ function moveToPending(inputsClass) {
 	<input type="text" class="task ${inputsClass}" value="${text}" disabled/>
 	<button class="${inputsClass}" onclick=editTask(${inputsClass})>Edit</button>
 	<button onclick= moveCompletedTasks(${inputsClass}) class="${inputsClass}">Completed</button>
-	<button class="${inputsClass}" onclick=deleteField(${inputsClass})>Delete</button>
+	<button class="${inputsClass}" onclick=deleteField(${inputsClass})>Delete</button><br>
 	`;
 }
